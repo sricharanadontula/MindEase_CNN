@@ -1,0 +1,225 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f0ff;
+  color: #28213b;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.app h1 {
+  font-size: 32px;
+  color: #7652c8;
+  margin-bottom: 10px;
+}
+
+.app > p {
+  color: #777;
+  margin-bottom: 35px;
+}
+
+.chat-container {
+  max-width: 750px;
+  height: 550px;
+  margin: auto;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.welcome-message {
+  margin-top: 100px;
+}
+
+.welcome-message h2 {
+  color: #7652c8;
+  margin-bottom: 15px;
+}
+
+.welcome-message p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.chat-input {
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+}
+
+.chat-input button {
+  padding: 12px 25px;
+  background: #7652c8;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px 5px;
+}
+
+.welcome-message {
+  text-align: center;
+  margin: auto;
+}
+
+.message {
+  max-width: 75%;
+  padding: 13px 18px;
+  border-radius: 15px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.message.user {
+  align-self: flex-end;
+  background: #7652c8;
+  color: white;
+  border-bottom-right-radius: 4px;
+}
+
+.upload-button {
+  cursor: pointer;
+  padding: 12px;
+  background: #f0eaff;
+  border-radius: 10px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-button:hover {
+  background: #e1d5ff;
+}
+
+.uploaded-image {
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 12px;
+  display: block;
+  margin-top: 10px;
+  object-fit: contain;
+}
+
+.uploaded-video {
+  max-width: 280px;
+  max-height: 220px;
+  border-radius: 12px;
+  display: block;
+  margin-top: 10px;
+}
+
+.file-preview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #f4f0ff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.file-preview button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.message p {
+  margin-bottom: 5px;
+}
+
+.camera-preview {
+  margin: 15px 0;
+  padding: 12px;
+  background: #f0ebfa;
+  border-radius: 12px;
+}
+
+.camera-video {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  background: #222;
+}
+
+.camera-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.camera-controls button,
+.chat-input button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.camera-error {
+  color: #c0392b;
+  padding: 8px;
+}
+
+.upload-button {
+  font-size: 20px;
+}
+
+.uploaded-video {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
+  background: #222;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.chat-messages {
+  overflow-y: auto;
+  max-height: 500px;
+}
+
+.message {
+  max-width: 85%;
+  margin: 12px 0;
+  padding: 10px;
+  border-radius: 12px;
+  overflow: visible;
+}

@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# Node
+node_modules/
+
+# Model checkpoints
+backend/wav2vec2_checkpoints/
+
+# Other large model files
+*.bin
+*.safetensors
+# AI model checkpoints
+backend/wav2vec2_checkpoints/
